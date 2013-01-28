@@ -1,0 +1,142 @@
+/*Base for NB - Personal Site */
+
+/*    	
+    2A5B84 //blue
+    AAC4D1 //light blue
+    EBC137 //yellow
+    FEFAE1	//white
+    BD8025	/gold
+     	
+    E850A8
+    D0AC11 //yellow
+    F5F1DE
+    000316	//black
+
+ */
+html{
+	background: #FEFAE1;
+}
+div {
+	border: 1px dotted red;
+}
+
+/*Class Section*/
+div.container {
+	margin-top: 40px;
+	width:70%;
+	margin: 0 auto;
+	z-index:1;
+}
+div.leftnav {
+	float:left;
+	border-radius: 5px 65%;
+}
+div.rightnav {
+	float: right;
+	border-radius: 65% 5px;
+}
+#foot{
+	margin: 0 0%;
+	padding: 0 0%;
+	text-align: center;
+	/*background: black;*/
+
+}
+.nb {
+	margin: 0 0 0 36%;
+	padding: 0px 0px;
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	background: #D2BE96;
+	/*-webkit-box-shadow: 0px 0px 10px 10px #191919;
+	box-shadow: 0px 0px 5px 5px #191919;*/
+	border-radius: 100% 100% 100% 100%;
+	font-size: 100px;
+	vertical-align: middle;
+	line-height: .2em;
+	font-family: 'Jacques Francois Shadow', cursive;
+}
+div#arc{
+	margin: 0 0 0 36%;
+	padding: 0px 0px;
+	width: 300px;
+	height: 150px;
+}
+.navbutton {
+	margin: 15px 15% ;
+	padding: 10px 10px ;
+	box-shadow: inset 0 0 3px #000;
+	width: 120px;
+	text-align: center;
+	box-shadow: inset 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+}
+.blogset{
+	float:left;
+}
+.projectset{
+	float:right;
+}
+.set{
+	margin: 20px 100px;
+	padding: 0 50px;
+
+}
+.quote{
+	margin: 0 30%;
+	padding: 50px 0 0 0 ;
+	text-align: center;
+	font: 30px serif;
+}
+.emailenter{
+	margin: 150px 25% 0 25%;
+	width: 50%;
+	text-align: center;
+}
+/*ID SECTION*/
+#background{
+	background: #D2BE96;
+	height: 80px;
+	z-index:1;
+
+	-webkit-box-shadow: 0px 0px 5px 0px #191919;
+	box-shadow: 0px 0px 20px 2px #191919;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

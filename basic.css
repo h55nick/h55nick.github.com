@@ -1,0 +1,146 @@
+/*General CSS*/
+
+div{
+	border: 1px dashed red;
+}
+a{
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+	font-size:1.125em;
+}
+a:hover{
+	color: #919191;
+}
+body{
+	color: #DDD;	
+	background-color: #111111;
+}
+li{
+	display:inline;
+}
+/*Class CSS*/
+.tempbord{
+	border: 1px dashed red;
+}
+.circ{
+	border-radius: 100%;
+	background: #AAA;
+	height:70px;
+	width:70px;
+	display:inline-block;
+	text-align: center;
+	line-height: 2.7em;
+	font-size: 1.3em;
+}
+.spacer{
+	margin-left: 15px;
+}
+.fullwidth{
+	width:900px;/*1170 900*/
+	margin:auto;
+}
+.container{
+	width:1170px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.center{
+	margin:auto;
+}
+
+.lg{
+	background-color: #E1E1E1;
+}
+.top{
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.bgspan{
+
+}/*
+.cone{
+	background-color: #000;
+}
+.ctwo{
+	background-color: #000;
+}
+.cthree{
+	background-color: #000;
+}
+.cfour{
+	background-color: #000;
+}*/
+.cc{
+	text-align:center;
+}
+.titlebar{
+	text-align: center;
+	display:inline;
+}
+.inverse{
+	color: #DDD;
+	background-color: #111111;
+}
+.linkbar{
+	margin-top: 32px;
+	margin-right: 20%;
+	margin-left:auto;
+ 	min-width: 320px;
+ 	height:72px;
+ 	display: inline-block;
+	float:right;
+	max-width:70%;
+
+}
+.nb{
+	font-size: 8em;
+	margin-left: 0;
+	width:320px;
+	display:inline-block;
+	text-align:center;
+}
+.cblock{
+	height:270px;
+	padding:0px;
+	margin:auto;
+	/*bordering*/
+	/*border-right:3px solid black;
+	border-left:3px solid black;*/
+}
+.cblock.topblock{
+	border-top:1px solid grey;
+	padding: 20px 0 0 0 ;
+}
+.innercontents{
+	display: inline-block;
+}
+.innercontents.subcontent{
+	height:200px;
+	width: 600px;
+}
+
+/*ID CSS*/
+#livefeed{
+	margin: 0 0 0 0;
+	width:200px;
+	height:200px;
+	background: #f1f1f1;
+	float:right;
+}
+/* Use Case CSS*/
+
+
+/* clearfix */
+  
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
