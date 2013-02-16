@@ -31,7 +31,7 @@ html {
 
 }
 div.row{
-  color: #EEE;
+  color: #EBEBEB;
 }
 body{
   background: none;
@@ -64,7 +64,7 @@ span.signature{
    Page Home
 ----------------------------------------- */
 .nb{
-  color: #FFF;
+  color: #EBEBEB;
   font-family: 'Cinzel Decorative', cursive;
   text-shadow: 3px 3px 14px #6e6e6e;
 }
