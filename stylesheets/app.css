@@ -1,0 +1,86 @@
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+
+/* HACKS*/
+
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+/*Reset Foundation Color*/
+nav.fixed.top-bar#cleartopnav{
+  background: none;
+}
+
+html {
+  background: url("../images/darkwood.jpeg") #111 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #EEE;
+
+}
+div.row{
+  color: #EEE;
+}
+body{
+  min-height: 960px;
+  background-color: rgb(0, 0, 0);
+/* RGBa with 0.6 opacity */
+background-color: rgba(0, 0, 0, 0.6);
+
+}
+span.signature{
+  /*Add signature text!*/
+font-family:  'Oleo Script', Helvetica, sans-serif;
+opacity: .6;
+}
+
+/* -----------------------------------------
+   Page Home
+----------------------------------------- */
+.NB{
+ color: #FFF;
+  font-size: 160px;
+  font-family: 'Cinzel Decorative', cursive;
+  /*padding: .4em 0;
+  margin-top:40px;*/
+padding-left: 40px;
+  text-shadow: 3px 3px 14px #6e6e6e;
+}
+.inline{
+  display: inline-block;
+}
+div.NB#b{
+  margin-left: -80px;
+}
+
+div.row .simple{
+  padding-top: 18%;
+  padding-bottom: 20%;
+  font-size: 70px;
+}
+
+
+div.row div.simple{
+/*font-family: 'Nosifer', cursive;*/
+font-family: 'Vollkorn', serif;
+/*font-family: 'Old Standard TT', serif;*/
+
+  text-shadow: 3px 3px 10px #6e6e6e;
+}
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
