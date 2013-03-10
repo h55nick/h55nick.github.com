@@ -21,53 +21,65 @@
   <!-- Included CSS Files (Compressed) -->
   <link href='http://fonts.googleapis.com/css?family=Oldenburg|Cinzel+Decorative' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-
-
-<link href='http://fonts.googleapis.com/css?family=Lato:700italic,900italic|Ubuntu:700italic|Open+Sans:700italic,800italic|Vollkorn,700|Old+Standard+TT:700' rel='stylesheet' type='text/css'>
-
-
+ <!--  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:700italic,900italic|Ubuntu:700italic|Open+Sans:700italic,800italic|Vollkorn,700|Old+Standard+TT:700' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
+
 </head>
 
 <!-- ######### BODY ########## -->
 
 <body>
-    <div id='viewportdimmer'>
+
+    <div id='viewportdimmer' class='fixed'>
     </div>
+
+ <div id="imgfloatbox" class='hide-for-medium-down'>
+        <a href='http://www.github.com/h55nick'>
+          <div id='githover' class='floatimg' data-type="background" data-speed="10"></div>
+        </a>
+          <a href="http://www.linkedin.com/pub/nicholas-blanchet/24/809/775">
+            <div id='linkhover' class='floatimg' data-type='background' data-speed='10'></div>
+          </a>
+           <a href="http://www.twitter.com/h55nick">
+              <div id='twithover' class='floatimg' data-type='background' data-speed='10'></div>
+          </a>
+          <!--<div id='foldhover' class='floatimg' data-type='background' data-speed='10'>.</div> -->
+    </div>
+
+    <!--
+<section id="home" data-type="background" data-speed="10">
+</section>
+
+<section id="about" data-type="background" data-speed="10">
+</section>
+
+     -->
   <!-- Navigation -->
 <!-- <div id='darken'> -->
   <nav class="top-bar fixed" id='cleartopnav'>
-<!--     <ul>
-      <li class="name"><h1><a href="#">Title</a></h1></li>
-      <li class="toggle-topbar"><a href="#"></a></li>
- -->
-  </ul>
-
-    <section><!--
-      <ul class="left">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul> -->
-
+    <section>
       <ul class="right">
         <li class="has-dropdown">
           <a href="#">About</a>
           <ul class="dropdown">
             <li><a href="https://twitter.com/h55nick">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/pub/nicholas-blanchet/24/809/775">Linked'In</a></li>
+            <li>
+              <a href="https://www.linkedin.com/pub/nicholas-blanchet/24/809/775">Linked'In</a>
+            </li>
             <li ><a href="https://github.com/h55nick">Github</a></li>
-
-
           </ul>
         </li>
       </ul>
     </section>
-  </nav><br><br>
+  </nav>
+
+
+
+  <br><br>
 
   <!-- End Navigation -->
 
@@ -75,7 +87,7 @@
   <!-- Header -->
 <div class='row'>
   <div id='nameholder' class='NB twelve columns nb'>
-    <div class='hide-for-small'>
+    <div class='hide-for-small' >
               <div class='NB  inline nb'>
                     N
                     </div>
@@ -91,144 +103,22 @@
   <!-- End Header -->
 
   <div class='row'>
-        <div class='three columns centered simple'>
+        <div class='three columns centered simple' id='example1'>
         Simplicity.
       </div>
   </div>
 
-
-
-
-<!--
-  <div class="row">
-
-    <div class="three panel columns">
-      <img src="http://placehold.it/500x500&text=Image">
-
-      <h4>Header</h4>
-
-      <p>Fusce ullamcorper mauris in eros dignissim molestie posuere felis blandit. Aliquam erat volutpat. Mauris ultricies posuere vehicula. Sed sit amet posuere erat. Quisque in ipsum non augue euismod dapibus non et eros.</p><hr>
-
-      <div class="row">
-        <div class="four columns">
-        <a href="#" class="small button">Link</a>
-        </div>
-
-        <div class="four columns">
-        <a href="#" class="small button">Link</a>
-        </div>
-
-        <div class="four columns">
-        <a href="#" class="small button">Link</a>
-        </div>
-      </div>
+<div class='row'>
+    <div class='three columns centered' id='arrow'>
+        <H2>Arrow</H2>
     </div>
-
-    <div class="nine columns">
-      <div class="panel">
-        <div class="row">
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-
-          <div class="three columns end">
-            <img src="http://placehold.it/600x500&text=Thumbnail">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="six columns">
-          <div class="panel">
-            <h5>Subheader</h5>
-            <p>Sed sit amet posuere erat. Quisque in ipsum non augue euismod dapibus non et eros.</p>
-            <a href="#" class="small button">Link</a>
-          </div>
-        </div>
-
-        <div class="six columns">
-          <div class="panel">
-            <h5>Subheader</h5>
-            <p>Sed sit amet posuere erat. Quisque in ipsum non augue euismod dapibus non et eros.</p>
-            <a href="#" class="small button">Link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+</div>
 
 
--->
+<div class='spacer'>
 
+</div>
 
-
-  <!-- Footer -->
-
-  <!-- ACCORDIAN FOR FUTURE -->
-<!-- <div class='row'>
-  <ul class="accordion"class="support tag">
-  <li class="">
-    <div class="title">
-      <div class="six columns">
-            <p>Made with care by
-              <span class='signature'>Nick Blanchet
-              </span>
-            </p>
-        </div>
-    </div>
-    <div class="content">
-        <ul class="link-list center">
-              <li><a href="#">Github</a></li>
-              <li><a href="#">Linked'In</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#"></a></li>
-            </ul>
-    </div>
-  </li>
-</ul>
-</div> -->
 
   <footer class="row">
   <div class="twelve columns"><hr />
@@ -236,7 +126,7 @@
 
         <div class="six columns">
             <p>Made with care by
-              <span class='signature'>Nick Blanchet
+              <span class='sig'>Nick Blanchet
               </span>
             </p>
         </div>
@@ -254,7 +144,7 @@
             </ul>
         </div>
 
-
+      </div>
   </div>
   </footer>
 
@@ -277,7 +167,7 @@
   <script src="javascripts/jquery.foundation.topbar.js"></script>
   <script src="javascripts/jquery.foundation.joyride.js"></script>
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  <script src="javascroll-wrascripts/jquery.foundation.magellan.js"></script>
 
   -->
 
@@ -285,6 +175,8 @@
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
   <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/parallex.js"></script>
+  <script src="javascripts/my.js"></script>
 
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>

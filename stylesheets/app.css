@@ -17,10 +17,9 @@
    Shared Styles
 ----------------------------------------- */
 /*Reset Foundation Color*/
-nav.fixed.top-bar#cleartopnav{
+nav#cleartopnav{
   background: none;
 }
-
 html {
   background: url("../images/darkwood.jpeg") #111 no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -28,14 +27,15 @@ html {
   -o-background-size: cover;
   background-size: cover;
   color: #EEE;
-
 }
 div.row{
   color: #EBEBEB;
 }
 body{
   background: none;
-
+}
+.fixed{
+  position: fixed;
 }
 div#viewportdimmer{
     top: 0;
@@ -44,17 +44,16 @@ div#viewportdimmer{
     width: 100%;
     height: 100%;
     min-height: 900px;
-
-  background-color: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity*/
-    background-color: rgba(0, 0, 0, 0.65);*/
-    opacity: .6;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    /*opacity: .6;*/
 }
 
-footer.class{
+footer{
   bottom:0;
 }
-span.signature{
+.sig{
       /*Add signature text!*/
     font-family:  'Oleo Script', Helvetica, sans-serif;
     opacity: .6;
@@ -86,20 +85,67 @@ div.NB#b{
 
 div.row .simple{
   padding-top: 18%;
-  padding-bottom: 20%;
+  /*padding-bottom: ;*/
   font-size: 70px;
 }
+#arrow{
+  margin-top: 40px;
+  color: white;
+}
+
+
 
 
 div.row div.simple{
-/*font-family: 'Nosifer', cursive;*/
-font-family: 'Vollkorn', serif;
-/*font-family: 'Old Standard TT', serif;*/
-
+  font-family: 'Vollkorn', serif;
   text-shadow: 3px 3px 10px #6e6e6e;
 }
+
+/*-----  Floating Left Images ----*/
+#imgfloatbox{
+
+}
+#githover{
+  opacity: 1;
+  background-image:  url("../images/github-6-64.png");
+  margin-top: 150px;
+}
+#linkhover{
+  background-image: url("../images/linkedin-64.png");
+  margin-top: 250px;
+}
+#twithover{
+  background-image: url("../images/twitter-64.png");
+  margin-top: 350px;
+}
+#foldhover{
+background-image: url("../images/full-folder-64.png");
+margin-top: 450px;
+}
+.floatimg{
+    background-size: 100%;
+    float: left;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    margin-left: 120px;
+    padding: 20px;
+    opacity: 1;
+
+}
+.floatimg:hover{
+  opacity: .5;
+}
+
+
+
+
+
 /* -----------------------------------------
    Page Name 2
 ----------------------------------------- */
 
 
+.spacer{
+  height:800px;
+}
