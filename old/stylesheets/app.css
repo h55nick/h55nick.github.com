@@ -88,7 +88,7 @@ div.row .simple{
   /*padding-bottom: ;*/
   font-size: 70px;
 }
-#arrow{
+#arrow h2{
   margin-top: 40px;
   color: white;
 }
@@ -144,8 +144,10 @@ margin-top: 450px;
 /* -----------------------------------------
    Page Name 2
 ----------------------------------------- */
-
-
-.spacer{
-  height:800px;
+#block1{
+  height: 600px;
+}
+#block2{
+  /*background-color: #fff;*/
+  height: 10000px;
 }

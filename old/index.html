@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Nick Blanchet</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+
+  <!-- Included CSS Files (Compressed) -->
+  <link href='http://fonts.googleapis.com/css?family=Oldenburg|Cinzel+Decorative' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+ <!--  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:700italic,900italic|Ubuntu:700italic|Open+Sans:700italic,800italic|Vollkorn,700|Old+Standard+TT:700' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+</head>
+
+<!-- ######### BODY ########## -->
+
+<body>
+
+    <div id='viewportdimmer' class='fixed'>
+    </div>
+
+ <div id="imgfloatbox" class='hide-for-medium-down'>
+        <a href='http://www.github.com/h55nick'>
+          <div id='githover' class='floatimg' data-type="background" data-speed="10"></div>
+        </a>
+          <a href="http://www.linkedin.com/pub/nicholas-blanchet/24/809/775">
+            <div id='linkhover' class='floatimg' data-type='background' data-speed='10'></div>
+          </a>
+           <a href="http://www.twitter.com/h55nick">
+              <div id='twithover' class='floatimg' data-type='background' data-speed='10'></div>
+          </a>
+          <!--<div id='foldhover' class='floatimg' data-type='background' data-speed='10'>.</div> -->
+    </div>
+
+    <!--
+<section id="home" data-type="background" data-speed="10">
+</section>
+
+<section id="about" data-type="background" data-speed="10">
+</section>
+
+     -->
+  <!-- Navigation -->
+<!-- <div id='darken'> -->
+  <nav class="top-bar fixed" id='cleartopnav'>
+    <section>
+      <ul class="right">
+        <li class="has-dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown">
+            <li><a href="https://twitter.com/h55nick">Twitter</a></li>
+            <li>
+              <a href="https://www.linkedin.com/pub/nicholas-blanchet/24/809/775">Linked'In</a>
+            </li>
+            <li ><a href="https://github.com/h55nick">Github</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+
+
+  <br><br>
+
+  <!-- End Navigation -->
+
+<div id='block1'>
+      <!-- Header -->
+    <div class='row'>
+      <div id='nameholder' class='NB twelve columns nb'>
+        <div class='hide-for-small' >
+                  <div class='NB  inline nb'>
+                        N
+                        </div>
+                      <div class='NB  inline nb' id='b'>
+                         B
+                       </div>
+                </div>
+          <div class='show-for-small' id='nb'>
+                  NB
+          </div>
+              </div>
+      </div>
+      <!-- End Header -->
+
+      <div class='row'>
+            <div class='three columns centered simple' id='example1'>
+            Simplicity.
+          </div>
+      </div>
+
+    <div class='row'>
+        <div class='three columns centered' id='arrow'>
+            <H2>Arrow</H2>
+        </div>
+    </div>
+</div>
+
+
+<div id='block2' >
+  <div class='row'>
+ABOUT AND SHIT
+  </div>
+</div>
+
+
+  <footer class="row">
+  <div class="twelve columns"><hr />
+      <div class="row">
+
+        <div class="six columns">
+            <p>Made with care by
+              <span class='sig'>Nick Blanchet
+              </span>
+            </p>
+        </div>
+
+        <div class="six columns">
+            <ul class="link-list right">
+              <li><a href="https://github.com/h55nick">Github</a></li>
+              <li>
+                <a href="https://www.linkedin.com/pub/nicholas-blanchet/24/809/775">
+                  Linked'In
+                </a>
+              </li>
+              <li><a href="https://twitter.com/h55nick">Twitter</a></li>
+
+            </ul>
+        </div>
+
+      </div>
+  </div>
+  </footer>
+
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  <script src="javascripts/jquery.event.move.js"></script>
+  <script src="javascripts/jquery.event.swipe.js"></script>
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  <script src="javascripts/jquery.placeholder.js"></script>
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  <script src="javascroll-wrascripts/jquery.foundation.magellan.js"></script>
+
+  -->
+
+</div>
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/parallex.js"></script>
+  <script src="javascripts/my.js"></script>
+
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+</body>
+</html>
