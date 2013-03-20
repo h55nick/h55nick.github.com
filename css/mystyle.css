@@ -1,10 +1,31 @@
-div{
+/*
+# YELLOW: E5BE47;
+# B-Yellow: F7E442;
+# Grey: 222222;
+#ebebeb
+# White: FCFCFC;
+# Orange: D54E00;
+# D-Blue: 000222;
+*/div{
 /*border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
   /*#FCFCFC;*/
 }
+a:hover{
+  opacity: .7;
+}
+.cinz{
+   font-family: 'Cinzel Decorative', cursive;
+}
+.crim{
+font-family: 'Crimson Text', serif;
+}
+.tcenter{
+  text-align: center;
+}
+/* =============SPLASH============*/
 #topspacer{
   min-height: 12%;
   height: 200px;
@@ -29,26 +50,25 @@ min-height: 300px;/*
 }
 #nameholder{
   margin-top: 10%;
-  font-family: 'Cinzel Decorative', cursive;
   font-size: 3em;
-  /*margin-left: 70px;*/
+  margin-left: 15px;
 }
 .mainlink{
   margin-top: 5px;
   margin-bottom: 5px;
   /*padding-left: 103px !important;*/
-  font-family: 'Crimson Text', serif;
+
   font-size: 1.4em;
 }.mainlink:hover{
   opacity: .7;
 }
 .mslash{
-  color: rgba(207, 83, 0,1);
+  color: #D54E00;
   font-size: 1.2em;
   font-weight: bold;
 }
 .micons{
-     margin-top: 2%;
+   margin-top: 2%;
    }.mimage:hover{
   opacity: .7;
 }
@@ -57,7 +77,7 @@ min-height: 300px;/*
 }
 
 #barrow{
-  bottom: 90px;
+  bottom: 50px;
   left: 48%;
   position: fixed;
   margin: auto;
@@ -73,8 +93,48 @@ min-height: 300px;/*
 #arrowhold{
 
 }
+
+
+/*=====   ABOUT =====*/
 #about{
+  min-height: 650px;
+  background-color: #ebebeb;/*#7C8480;*/
+ /* box-shadow: 0 0 10px #999;*/
+ border-top: 1px #000222 dotted;
+ border-bottom: 1px #000222 dotted;
+}
+#portfolio{
+  background-color: #EEE;
   min-height: 600px;
-  background-color: #888;
+}
+#dochart{
+  opacity: .8;
+  /*border: 10px white solid;*/
+  margin-top: 30px;
+}
+#dochart:hover{
+  opacity: 1;
+}
+.coffeebox{
+  line-height: 3em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.bio{
+  margin-top: 40px;
+  font-size: 1.13em;
 }
 
+/*=====Projects =======*/
+#projects{
+   min-height: 600px;
+  background-color: #FCFCFC;/*#7C8480;*/
+}
+
+/*=====Extras =======*/
+#extras{
+  min-height: 500px;
+  background-color: #999;
+  box-shadow: 0 0 100px #999;
+}

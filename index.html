@@ -22,11 +22,11 @@
     </head>
     <body>
         <div id='holder' class=''>
-          <div class='hide-for-small' id='topspacer'>
-          </div>
+            <div class='hide-for-small' id='topspacer'>
+            </div>
             <div class="row header">
                 <div class='large-4 columns large-offset-1'>
-                      <div id='nameholder'>
+                      <div id='nameholder' class='cinz'>
                         <span id='NB'>
                           N.Blanchet
                         </span>
@@ -34,23 +34,23 @@
                       <div class='show-for-small row' id='headspacer'></div>
                 </div>
 
-                <div class='large-2 columns mainlinks centered'>
+                <div class='large-2 columns mainlinks centered crim'>
                       <a href='#about'>
-                      <div class='large-12 columns mainlink'>
+                      <div class='small-4 large-12 columns mainlink'>
                         <span class='mslash'>/</span> About
                       </div>
                       </a><a href='#projects'>
-                      <div class='large-12 columns mainlink'>
+                      <div class='small-4 large-12 columns mainlink'>
                       <span class='mslash'>/</span> Projects
                       </div>
-                      </a><a href='#'>
-                      <div class='large-12 columns mainlink'>
-                      <span class='mslash'>/</span> Events
+                      </a><a href='#extra'>
+                      <div class='small-4 large-12 columns mainlink'>
+                      <span class='mslash'>/</span> Extra
                     </div>
                     </a>
                   </div>
                   <div class='large-5 columns micons'>
-                    <div class='show-for-small row' id='headspacer'></div>
+                      <div class='show-for-small row' id='headspacer'></div>
                         <a href="https://www.github.com/h55nick" target="_blank">
                         <img src="img/github.png" alt="Github" class='mimage'>
                          </a><a href="https://www.twitter.com/h55nick" target="_blank">
@@ -62,14 +62,50 @@
             </div>
             <div id='barrow' class=''>
                 <div id='arrowhold' class='centered'>
-                    <img src='img/arrow1.png' id='arrow'>
+                    <a href='#about'><img src='img/arrow1.png' id='arrow'></a>
                 </div>
             </div>
         </div>
+
         <div  id='about'>
           <div class='row'>
+            <div class='columns large-6 bio'>
+                <h1 class='crim'>Me...</h1>
+              <div class='columns  large-11 bio crim'>
+                  I am a developer
+                  <hr/> - that lives, works and plays in New York City.
+                  <hr/>My code does more then look pretty
+                  <hr/> - it makes money.
+              </div>
+            </div>
+            <div class='columns large-5'>
+              <canvas id="dochart" width="400" height="400"></canvas>
+            </div>
+            <div class='columns large-1'></div>
+          </div>
+          <div class='row'>
+            <a href="tel://1-603-903-3262"><div class='large-4 columns small-centered coffeebox tcenter crim'>
+              Let's Grab <img src='img/coffee.png'></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div  id='projects'>
+          <div class='row'>
             <div class='columns 12-large'>
-                about
+                Portfolio
+            </div>
+          </div>
+        </div>
+
+
+
+
+      <div  id='extras'>
+          <div class='row'>
+            <div class='columns 12-large'>
+                Extras
             </div>
           </div>
         </div>
@@ -91,9 +127,14 @@ document.write('<script src=' +
   <script src="js/foundation/foundation.topbar.js"></script>
 
 -->
-<script src="js/myjs.js"></script>
+
         <script type="text/javascript">
 $(document).foundation();
         </script>
+        <script src="js/charting.js"></script>
+        <!-- <script src="js/scrollorama.js"></script> -->
+        <script src="js/myjs.js"></script>
+
+
     </body>
 </html>
