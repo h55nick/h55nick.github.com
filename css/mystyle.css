@@ -6,8 +6,9 @@
 # White: FCFCFC;
 # Orange: D54E00;
 # D-Blue: 000222;
-*/div{
-/*border: 1px dotted red;*/
+*/
+div{
+  /*border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
@@ -75,6 +76,10 @@ min-height: 300px;/*
 .mimage{
   margin: 8px;
 }
+#iconspacer{
+  min-width: 1px;
+  min-height: 1px;
+}
 
 #barrow{
   bottom: 50px;
@@ -98,7 +103,8 @@ min-height: 300px;/*
 /*=====   ABOUT =====*/
 #about{
   min-height: 650px;
-  background-color: #ebebeb;/*#7C8480;*/
+  background-image:url(http://subtlepatterns.com/patterns/noise_lines.png);
+ /* background-color: #ebebeb;*//*#7C8480;*/
  /* box-shadow: 0 0 10px #999;*/
  border-top: 1px #000222 dotted;
  border-bottom: 1px #000222 dotted;

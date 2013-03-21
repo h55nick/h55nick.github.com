@@ -4,9 +4,9 @@ var initheader= $('.header').offset().top;
 $(function(){
      $window = $(window);
      $(window).scroll(scrollr);
-
-     if($('#barrow').offset().top < 300){
-        $('#barrow').empty();
+     console.log($('#arrow').offset().top);
+     if($('#arrow').offset().top <= 100){
+        $('#arrow').empty();
      }
 
 });
@@ -19,12 +19,11 @@ function scrollr(){
         $('#arrowhold').css("opacity",100/(yPos*60+100));
 
         if(yPos > 200){
+           $("#dochart").stop();
             chartit();
         }
-        /*if($('#arrowhold').offset().top > 800){
-            $('#arrowhold').css("opacity",0);
-        }
-*/}
+
+}
 
 function topnavscroll(yPos){
   tD =  - $(window).scrollTop();
