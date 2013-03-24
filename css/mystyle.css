@@ -8,7 +8,7 @@
 # D-Blue: 000222;
 */
 div{
-  /*border: 1px dotted red;*/
+ /* border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
@@ -37,28 +37,21 @@ font-family: 'Crimson Text', serif;
 
 }
 #holder{
-/*height: 20%;*/
-min-height: 300px;/*
-  max-height: 300px;*/
- /* height: 25%;*/
- /* margin: 8%;*/
+  min-height: 300px;
 }
 .header{
-  /*margin-top: 12%;*/
   margin-bottom: 30%;
   min-height: 20%;
-  /*max-height: 20%;*/
 }
 #nameholder{
   margin-top: 10%;
   font-size: 3em;
-  margin-left: 15px;
+  padding-left: -9px;
 }
 .mainlink{
   margin-top: 5px;
   margin-bottom: 5px;
-  /*padding-left: 103px !important;*/
-
+  padding-left: -100px !important;
   font-size: 1.4em;
 }.mainlink:hover{
   opacity: .7;
@@ -76,6 +69,10 @@ min-height: 300px;/*
 .mimage{
   margin: 8px;
 }
+.mimage.ficon{
+  margin-left: -22px;
+}
+
 #iconspacer{
   min-width: 1px;
   min-height: 1px;
@@ -95,9 +92,7 @@ min-height: 300px;/*
   transform:rotate(90deg);
   margin: 0 auto;
 }
-#arrowhold{
 
-}
 
 
 /*=====   ABOUT =====*/

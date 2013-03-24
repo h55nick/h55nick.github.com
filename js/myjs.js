@@ -4,18 +4,16 @@ var initheader= $('.header').offset().top;
 $(function(){
      $window = $(window);
      $(window).scroll(scrollr);
-     console.log($('#arrow').offset().top);
-     if($('#arrow').offset().top <= 100){
-        $('#arrow').empty();
+     var ah = $('#barrow').offset().top;
+     console.log($(window).width());
+     if(ah <= 300  || $(window).width() < 600 ){
+        $('#barrow').empty();
      }
-
 });
 
 function scrollr(){
           var yPos = ($window.scrollTop());
           //topnavscroll(yPos);
-
-
         $('#arrowhold').css("opacity",100/(yPos*60+100));
 
         if(yPos > 200){
