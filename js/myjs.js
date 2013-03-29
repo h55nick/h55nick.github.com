@@ -2,27 +2,65 @@
 
 var initheader= $('.header').offset().top;
 $(function(){
+    $('.curtains').curtain();
+    $('#matrix').fadeOut(4000,easing(),function(){$(this).remove();});
      $window = $(window);
      $(window).scroll(scrollr);
      var ah = $('#barrow').offset().top;
-     console.log($(window).width());
      if(ah <= 300  || $(window).width() < 600 ){
         $('#barrow').empty();
      }
+     //setupblam();
+
+
 });
 
 function scrollr(){
-          var yPos = ($window.scrollTop());
-          //topnavscroll(yPos);
+        /*$('#matrix').fadeIn(100).fadeOut(400);*/
+        var yPos = ($window.scrollTop());
         $('#arrowhold').css("opacity",100/(yPos*60+100));
-
-        if(yPos > 200){
-           $("#dochart").stop();
-            chartit();
-        }
-
+        console.log($(document).height()-yPos-430);
+      if($(document).height()-yPos-440<=0){
+        alert("Boom");
+      }
 }
 
+function easing(x, t, b, c, d) {
+    var s=1.70158;var p=0;var a=c;
+    if (t===0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*0.3;
+    if (a < Math.abs(c)) { a=c; s=p/4; }
+    else s = p/(2*Math.PI) * Math.asin (c/a);
+    return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+  }
+
+/*function setupblam(){
+  $('#projects').on('click','#proj',clickproj);
+  $('#projects').on('click','#rd',clickread);
+  $('#projects').on('click','#ev',clickevent);
+
+}
+function clickproj(e){
+  e.preventDefault();
+  $('.projects').removeClass('hide');
+  $('.reading').addClass('hide');
+  $('.events').addClass('hide');
+}
+function clickread(e){
+  e.preventDefault();
+  $('.reading').removeClass('hide');
+  $('.projects').addClass('hide');
+  $('.events').addClass('hide');
+}
+function clickevent(e){
+  e.preventDefault();
+  $('.events').removeClass('hide');
+  $('.reading').addClass('hide');
+  $('.projects').addClass('hide');
+}*/
+
+
+
+/*
 function topnavscroll(yPos){
   tD =  - $(window).scrollTop();
   console.log($('.header').offset().top)
@@ -30,109 +68,4 @@ function topnavscroll(yPos){
    $('.header').css("margin-top", yPos -initheader + "px");
   }
 }
-
-
-
-
-function chartit(){
-      //Get context with jQuery - using jQuery's .get() method.
-      var ctx = $("#dochart").get(0).getContext("2d");
-      //This will get the first returned node in the jQuery collection.
-
-      var data = {
-        labels : ["Food","Reading","Dogs","Code","Design","Running"],
-        datasets : [
-          {
-            fillColor : "rgba(151,187,105,0.5)",
-            strokeColor : "rgba(151,187,105,1)",
-            pointColor : "rgba(151,187,105,1)",
-            pointStrokeColor : "#fff",
-            data : [60,30,35,46,35,20]
-          },
-          {
-            fillColor : "rgba(151,187,205,0.5)",
-            strokeColor : "rgba(151,187,205,1)",
-            pointColor : "rgba(151,187,205,1)",
-            pointStrokeColor : "#fff",
-            data : [50,40,19,86,27,80]
-          }
-        ]
-      }
-
-      var options = {
-        //Boolean - If we show the scale above the chart data
-        scaleOverlay : false,
-        //Boolean - If we want to override with a hard coded scale
-        scaleOverride : false,
-        //** Required if scaleOverride is true **
-        //Number - The number of steps in a hard coded scale
-        scaleSteps : null,
-        //Number - The value jump in the hard coded scale
-        scaleStepWidth : null,
-        //Number - The centre starting value
-        scaleStartValue : null,
-        //Boolean - Whether to show lines for each scale point
-        scaleShowLine : true,
-        //String - Colour of the scale line
-        scaleLineColor : "rgba(0,0,0,.3)",
-        //Number - Pixel width of the scale line
-        scaleLineWidth : 1,
-        //Boolean - Whether to show labels on the scale
-        scaleShowLabels : false,
-        //Interpolated JS string - can access value
-        scaleLabel : "<%=value%>",
-        //String - Scale label font declaration for the scale label
-        scaleFontFamily : "'Arial'",
-        //Number - Scale label font size in pixels
-        scaleFontSize : 12,
-        //String - Scale label font weight style
-        scaleFontStyle : "normal",
-        //String - Scale label font colour
-        scaleFontColor : "#000",
-        //Boolean - Show a backdrop to the scale label
-        scaleShowLabelBackdrop : true,
-        //String - The colour of the label backdrop
-        scaleBackdropColor : "rgba(255,255,255,0.75)",
-        //Number - The backdrop padding above & below the label in pixels
-        scaleBackdropPaddingY : 2,
-        //Number - The backdrop padding to the side of the label in pixels
-        scaleBackdropPaddingX : 2,
-        //Boolean - Whether we show the angle lines out of the radar
-        angleShowLineOut : true,
-        //String - Colour of the angle line
-        angleLineColor : "rgba(0,0,0,.8)",
-        //Number - Pixel width of the angle line
-        angleLineWidth : 1,
-        //String - Point label font declaration
-        pointLabelFontFamily : "'Crimson Text'",
-        //String - Point label font weight
-        pointLabelFontStyle : "normal",
-        //Number - Point label font size in pixels
-        pointLabelFontSize : 18,
-        //String - Point label font colour
-        pointLabelFontColor : "#333",
-        //Boolean - Whether to show a dot for each point
-        pointDot : true,
-        //Number - Radius of each point dot in pixels
-        pointDotRadius : 2,
-        //Number - Pixel width of point dot stroke
-        pointDotStrokeWidth : 1,
-        //Boolean - Whether to show a stroke for datasets
-        datasetStroke : true,
-        //Number - Pixel width of dataset stroke
-        datasetStrokeWidth : 2,
-        //Boolean - Whether to fill the dataset with a colour
-        datasetFill : true,
-        //Boolean - Whether to animate the chart
-        animation : true,
-        //Number - Number of animation steps
-        animationSteps : 600,
-        //String - Animation easing effect
-        animationEasing : "easeOutQuart",
-        //Function - Fires when the animation is complete
-        onAnimationComplete : null
-
-      }
-      var myNewChart = new Chart(ctx).Radar(data,options);
-}
-
+*/

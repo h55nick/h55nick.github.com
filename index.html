@@ -22,15 +22,15 @@
     </head>
     <body>
         <div id='holder' class=''>
+          <div id='matrix'>
+            </div>
             <div class='hide-for-small' id='topspacer'>
             </div>
             <div class="row header">
                 <div class='large-4 columns large-offset-1'>
-
-
                       <div id='nameholder' class='cinz'>
+                        <div class='show-for-small small-1 columns iconspacer head'> </div>
                         <span id='NB'>
-                          <div class='show-for-small small-2 columns' id='iconspacer'> </div>
                           N.Blanchet
                         </span>
                       </div>
@@ -44,17 +44,17 @@
                       </div>
                       </a><a href='#projects'>
                       <div class='small-4 large-12 columns mainlink'>
-                      <span class='mslash'>/</span> Projects
+                      <span class='mslash'>/</span> Portfolio
                       </div>
                       </a><a href='#extra'>
                       <div class='small-4 large-12 columns mainlink'>
-                      <span class='mslash'>/</span> Extra
+                      <span class='mslash'>/</span> Contact
                     </div>
                     </a>
                   </div>
                   <div class='large-5 columns micons'>
                       <div class='show-for-small row' id='headspacer'></div>
-                      <div class='show-for-small small-4 columns' id='iconspacer'> </div>
+                      <div class='show-for-small small-4 columns iconspacer'> </div>
                             <a href="https://www.github.com/h55nick" target="_blank">
                               <img src="img/github.png" alt="Github" class='mimage ficon'>
                              </a><a href="https://www.twitter.com/h55nick" target="_blank">
@@ -74,23 +74,23 @@
 
         <div  id='about'>
           <div class='row'>
-            <div class='columns large-6 bio'>
+            <div class='columns large-9  small-12 small-centered bio'>
                 <h1 class='crim'>Me...</h1>
-              <div class='columns  large-11 bio crim'>
-                  I am a developer
-                  <hr/> - that lives, works and plays in New York City.
-                  <hr/>My code does more then look pretty
-                  <hr/> - it makes money.
+              <div class='columns  large-12 bio crim'>
+                  A developer that lives, works and plays in New York City.
+                  <!-- My code does more then look pretty, its <span class='emp'>fast</span> and it works. --> The first program I worked on was a hack for Diablo II in <span class='lang'>Perl</span>. While working towards a BS in <span class='emp'>Mathematics</span> and <span class='emp'>Economics</span> I wrote my senior thesis on <span class='emp'>Neural Networks</span> in <span class='lang'>C++</span>. After a spat in finance using <span class='lang'>VBA</span> and Excel-  I decided to turn full-time developer. Through  GA's Developer Intensive program I have been pushing software weekly, writing in <span class='lang'>Ruby</span>, and <span class='lang'>Javascript</span> while learning frameworks/libraries like <span class='lang'>Rails</span>, and <span class='lang'>jQuery</span>.
+                  <br/>
+                  <!-- &emsp;Your going to want me on your team. I guarantee it. -->
               </div>
             </div>
-            <div class='columns large-5'>
+            <!-- <div class='columns large-5'>
               <canvas id="dochart" width="400" height="400"></canvas>
             </div>
-            <div class='columns large-1'></div>
+            <div class='columns large-1'></div> -->
           </div>
           <div class='row'>
             <a href="tel://1-603-903-3262"><div class='large-4 columns small-centered coffeebox tcenter crim'>
-              Let's Grab <img src='img/coffee.png'></a>
+              Let's Grab <img src='img/coffee.png' id='coffee'></a>
             </div>
           </div>
         </div>
@@ -98,33 +98,124 @@
 
         <div  id='projects'>
           <div class='row'>
-            <div class='columns 12-large'>
-                Portfolio
+            <div class='columns large-8 small-centered titlehead crim'>
+              <div class='columns small-3 title'>
+                <a href='#' id='proj'>
+                  Projects </a>
+              </div>
+              <div class='columns small-3 small-offset-1 title'>
+                <a href='#' id='ev'>
+                  Events</a>
+              </div>
+              <div class='columns small-3 title small-offset-1'>
+                <a href='#' id='rd'>
+                 Reading </a>
+              </div>
+              <div class='columns small-1'></div>
+          </div>
+
+              <div class='hide-for-small colums small-centered'>
+                <hr id='slider'/>
+                <div id='di' class='diam'></div>
+              </div>
+
+            <div class='row'>
+              <div class='projects columns large-10 small-centered container'>
+                  <div class='columns large-6'>
+                    <br/>
+                    <img src='img/vg.png'>
+                    <br/>
+                  </div>
+                  <div class='columns large-6'>
+                    Project Column 2
+                  </div>
+              </div>
+              <div class='hide reading columns large-10 small-centered container'>
+                readinglist
+              </div>
+              <div class='hide events columns large-10 small-centered container'>
+                events
+              </div>
+            </div>
             </div>
           </div>
         </div>
 
 
+<!--
 
 
       <div  id='extras'>
           <div class='row'>
-            <div class='columns 12-large'>
-                Extras
+            <div class='columns large-4'>
+              <h3>Calendar</h3>
+              <ul>Upcoming!
+                <li>API Hackathon</li>
+                <li>RoR Flatiron Meetup</li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>Past
+                <li>API Hackathon</li>
+                <li>RoR Flatiron Meetup</li>
+                <li></li>
+                <li></li>
+              </ul>
+
+            </div>
+            <div class='columns large-4'>
+              <h3>Bookshelf</h3>
+              <ul>
+                <li>Reading
+                  <ul>
+                    <li>Turn the Ship Around
+                      <span class='by'>by</span>
+                      <span class = 'author'>David Marquet</span></li>
+                    <li>Godel Escher Bach: An Eternal Golden Braid
+                      <span class='by'>by</span>
+                      <span class = 'author'>Douglas Hofstadter</span> </li>
+                  </ul></li>
+                   <li>Read
+                  <ul>
+                    <li>How to Win Friends and Influence People
+                      <span class='by'>by</span>
+                      <span class = 'author'>Dale Carnegie</span></li>
+                    <li>The Signal and the Noise
+                      <span class='by'>by</span>
+                      <span class = 'author'>Nate Silver</span> </li>
+                    <li>Prisoners Delema
+                      <span class='by'>by</span>
+                      <span class = 'author'>William Poundstone</span> </li>
+                    <li>The Signal and the Noise
+                      <span class='by'>by</span>
+                      <span class = 'author'>Nate Silver</span> </li>
+                  </ul></li>
+
+                </ul>
+            </div>
+            <div class='columns large-4'>
+              <h3>Bookshelf</h3>
+              <ul>Reading
+                <li>SomeBook by ------- </li>
+                <li>SomeBook by ------- </li>
+                <li>SomeBook by ------- </li>
+                <li>SomeBook by ------- </li>
+              </ul>
             </div>
           </div>
         </div>
 
 
-
+ -->
 
 <script type="text/javascript">
 document.write('<script src=' +
         ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
         '.js><\/script>')
-        </script><script src="js/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="js/foundation.min.js" type="text/javascript">
 </script>
-
+<script src="js/foundation/foundation.section.js"></script>
 <!--
   <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.reveal.js"></script>
@@ -136,8 +227,9 @@ document.write('<script src=' +
         <script type="text/javascript">
 $(document).foundation();
         </script>
-        <script src="js/charting.js"></script>
+        <!-- <script src="js/charting.js"></script> -->
         <!-- <script src="js/scrollorama.js"></script> -->
+        <script src="js/curtain.js"></script>
         <script src="js/myjs.js"></script>
 
 
