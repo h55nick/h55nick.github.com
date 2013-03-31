@@ -7,7 +7,7 @@
 # Orange: D54E00;
 # D-Blue: 000222;
 */
-div{
+#projects div{
   /*border: 1px dotted red;*/
 }
 body{
@@ -53,8 +53,8 @@ a:hover{
 }
 #nameholder{
   margin-top: 10%;
-  font-size: 3em;
-  padding-left: -9px;
+  font-size: 2.8em;
+  padding-left: 25px;
 }
 .mainlink{
   margin-top: 5px;
@@ -104,27 +104,13 @@ a:hover{
   margin: 0 auto;
 }
 
-
-
 /*=====   ABOUT =====*/
 #about{
-  min-height: 500px;
+  min-height: 700px;
   background-image:url('../img/aboutBG.png');
  border-top: 1px #000222 dotted;
  border-bottom: 1px #000222 dotted;
  text-align: justify;
-}
-#portfolio{
-  background-color: #EEE;
-  min-height: 600px;
-}
-#dochart{
-  opacity: .8;
-  /*border: 10px white solid;*/
-  margin-top: 30px;
-}
-#dochart:hover{
-  opacity: 1;
 }
 .coffeebox{
   line-height: 3em;
@@ -133,13 +119,18 @@ a:hover{
   font-size: 1.5em;
 }
 #coffee{
+  margin-top: 30px;
   margin-bottom: -3px;
+}#me{
+  display: inline-block;
+  margin-top: 30px;
 }
 .bio{
-  margin-top: 10px;
+  margin-top: 35px;
   font-size: 1.18em;
   line-height: 1.9em;
 }
+
 .lang,.emp{
   font-size: 1.14em;
   font-weight: bold;
@@ -152,6 +143,10 @@ a:hover{
 }
 
 /*=====Projects =======*/
+#portfolio{
+  background-color: #EEE;
+  min-height: 600px;
+}
 #projects{
     min-height: 800px;
     background-color: #FCFCFC;/*#7C8480;*/
@@ -168,7 +163,7 @@ a:hover{
   font-weight: bold;
 }
 .titlehead{
-  margin: 100px 0;
+  margin: 100px 0 70px 0;
 }
 #di{
   position: relative;
@@ -188,30 +183,18 @@ a:hover{
   transform:rotate(45deg);
 }
 .container{
-  padding-top: 50px;
+  padding-top: 70px;
+}
+.project{
+  height:175px;
+  width: 300px;
+  background-color: #aaa;
+  margin: 1px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 
-
-/*## CURTAIN CODE*/
-
-.curtains{
-    width: 100%;
-    z-index:1;
-    position:relative;
+.bookshelf{
+  font-size: 1.3em;
 }
-
-.curtains>li{
-    -webkit-transform:translateZ(0);
-    background: white;
-    position: fixed;
-    display:block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    z-index:1;
-}
-.curtains>li.hidden{display:none;}
-.curtains>li:first-child{z-index:2;}

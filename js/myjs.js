@@ -2,24 +2,36 @@
 
 var initheader= $('.header').offset().top;
 $(function(){
-    $('.curtains').curtain();
     $('#matrix').fadeOut(4000,easing(),function(){$(this).remove();});
+    $('#porthidden').hide();
+    $('.reading').hide();
+    $('.events').hide();
      $window = $(window);
      $(window).scroll(scrollr);
      var ah = $('#barrow').offset().top;
      if(ah <= 300  || $(window).width() < 600 ){
         $('#barrow').empty();
      }
-     //setupblam();
+/*
+     $("a[href*=#]").click(function() {
+        var target = $(this).attr('href');
+        $('html, body').animate({
+                scrollTop: $(target).offset().top
+        }, 300);
+        $("html, body").animate({ scrollTop: $(target).offset().top +'px' });
+        return false;
+    });*/
 
-
+     setupblam();
 });
+
+
 
 function scrollr(){
         /*$('#matrix').fadeIn(100).fadeOut(400);*/
         var yPos = ($window.scrollTop());
         $('#arrowhold').css("opacity",100/(yPos*60+100));
-        console.log($(document).height()-yPos-430);
+        //console.log($(document).height()-yPos-430);
       if($(document).height()-yPos-440<=0){
         alert("Boom");
       }
@@ -33,7 +45,7 @@ function easing(x, t, b, c, d) {
     return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
   }
 
-/*function setupblam(){
+function setupblam(){
   $('#projects').on('click','#proj',clickproj);
   $('#projects').on('click','#rd',clickread);
   $('#projects').on('click','#ev',clickevent);
@@ -41,22 +53,27 @@ function easing(x, t, b, c, d) {
 }
 function clickproj(e){
   e.preventDefault();
-  $('.projects').removeClass('hide');
-  $('.reading').addClass('hide');
-  $('.events').addClass('hide');
+  $('.projects').fadeIn('slow');
+  $('.reading').show().hide();
+  $('.events').show().hide();
+  $('#di').animate({"left":"255px"}, "slow");
 }
 function clickread(e){
   e.preventDefault();
-  $('.reading').removeClass('hide');
-  $('.projects').addClass('hide');
-  $('.events').addClass('hide');
+  $('.reading').fadeIn('slow');
+  $('.projects').show().hide();
+  $('.events').show().hide();
+  /*$('#di').css("left","680px");*/
+  $('#di').animate({"left":"680px"}, "slow");
+  /*$('#di').animate("left","680px", 700);*/
 }
 function clickevent(e){
   e.preventDefault();
-  $('.events').removeClass('hide');
-  $('.reading').addClass('hide');
-  $('.projects').addClass('hide');
-}*/
+  $('.events').fadeIn('slow');
+  $('.reading').show().hide();;
+  $('.projects').show().hide();
+ $('#di').animate({"left":"470px"}, "slow");
+}
 
 
 
