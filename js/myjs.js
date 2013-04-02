@@ -1,5 +1,5 @@
 
-$('#matrix').fadeOut(4000,easing(),function(){$(this).remove();});
+/*$('#matrix').fadeOut(4000,easing(),function(){$(this).remove();});*/
 
 
 var initheader= $('.header').offset().top;

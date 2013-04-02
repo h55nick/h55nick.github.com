@@ -6,8 +6,9 @@
 # White: FCFCFC;
 # Orange: D54E00;
 # D-Blue: 000222;
+
 */
-#projects div{
+div{
  /* border: 1px dotted red;*/
 }
 body{
@@ -34,10 +35,9 @@ a:hover{
 }
 #headspacer{
   height: 40px;
-
 }
 #holder{
-  min-height: 300px;
+  min-height: 100%;
 }
 #matrix{
     background-image: url('../img/blue-matrix-animated.gif');
@@ -214,23 +214,3 @@ footer#contact{
 #spacehack{
   border: 2px solid black;
 }
-<div class='columns large-10 large-centered'>
-                        <div class='columns large-2'>.</div>
-                        <div class='columns large-5'>
-                            <h4>Past</h4>
-                            <ol>
-                              <li>IBM Race Weekend</li>
-                              <li>Full-Stack Meetup @GA</li>
-                              <li>Flatiron Ruby Meetup</li>
-                              <li>Decoded Fashion @AlleyNYC</li>
-                              <li>API Hackathon</li>
-                              <li>NJ Mobile Meetup </li>
-                            </ol>
-                        </div>
-                        <div class='columns large-4'>
-                            <h4>Future</h4>
-                              <img src='img/bigapp.png'/>
-                              <img src='img/fintech.png'/>
-                              <img src='img/space.png'/ id='spacehack'>
-                        </div>
-                      </div>
