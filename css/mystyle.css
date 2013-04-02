@@ -8,7 +8,7 @@
 # D-Blue: 000222;
 */
 #projects div{
-  /*border: 1px dotted red;*/
+ /* border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
@@ -198,3 +198,39 @@ a:hover{
 .bookshelf{
   font-size: 1.3em;
 }
+.by{
+  font-size: .7em;
+}
+
+
+footer#contact{
+  border-top: 1px dotted black;
+  background-image:url('../img/aboutBG.png');
+  width: 100%;
+  height: 300px;
+}
+
+
+#spacehack{
+  border: 2px solid black;
+}
+<div class='columns large-10 large-centered'>
+                        <div class='columns large-2'>.</div>
+                        <div class='columns large-5'>
+                            <h4>Past</h4>
+                            <ol>
+                              <li>IBM Race Weekend</li>
+                              <li>Full-Stack Meetup @GA</li>
+                              <li>Flatiron Ruby Meetup</li>
+                              <li>Decoded Fashion @AlleyNYC</li>
+                              <li>API Hackathon</li>
+                              <li>NJ Mobile Meetup </li>
+                            </ol>
+                        </div>
+                        <div class='columns large-4'>
+                            <h4>Future</h4>
+                              <img src='img/bigapp.png'/>
+                              <img src='img/fintech.png'/>
+                              <img src='img/space.png'/ id='spacehack'>
+                        </div>
+                      </div>

@@ -1,8 +1,10 @@
 
+$('#matrix').fadeOut(4000,easing(),function(){$(this).remove();});
+
 
 var initheader= $('.header').offset().top;
 $(function(){
-    $('#matrix').fadeOut(4000,easing(),function(){$(this).remove();});
+
     $('#porthidden').hide();
     $('.reading').hide();
     $('.events').hide();
@@ -54,24 +56,22 @@ function setupblam(){
 function clickproj(e){
   e.preventDefault();
   $('.projects').fadeIn('slow');
-  $('.reading').show().hide();
-  $('.events').show().hide();
+  $('.reading').hide();
+  $('.events').hide();
   $('#di').animate({"left":"255px"}, "slow");
 }
 function clickread(e){
   e.preventDefault();
   $('.reading').fadeIn('slow');
-  $('.projects').show().hide();
-  $('.events').show().hide();
-  /*$('#di').css("left","680px");*/
+  $('.projects').hide();
+  $('.events').hide();
   $('#di').animate({"left":"680px"}, "slow");
-  /*$('#di').animate("left","680px", 700);*/
 }
 function clickevent(e){
   e.preventDefault();
   $('.events').fadeIn('slow');
-  $('.reading').show().hide();;
-  $('.projects').show().hide();
+  $('.reading').hide();
+  $('.projects').hide();
  $('#di').animate({"left":"470px"}, "slow");
 }
 
