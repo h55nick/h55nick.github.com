@@ -1,0 +1,46 @@
+/*
+font-family: 'Gilda Display', serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+*/
+.gild{
+  font-family: 'Gilda Display', serif;
+}
+.oxy{
+  font-family: 'Oxygen', sans-serif;
+}
+.fj{
+  font-family: 'Fjalla One', sans-serif;
+}
+body{
+  background-color: #fafafa;
+}
+#head{
+  font-family: 'Gilda Display', serif;
+}
+.tlink{
+  font-size: 1.2em;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.tcenter{
+  margin: 0 auto;
+  text-align: center;
+}
+.hrow{
+  padding: 30px 0;
+  background-color: #264a98;
+  border-radius: 50px 0 50px 0;
+}
+p.quote{
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  font-size: 1.1em;
+}
+span.name{
+  font-size: 1.3em;
+  font-style: italic;
+  color: blue;
+}
