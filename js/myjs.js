@@ -35,7 +35,7 @@ function scrollr(){
         $('#arrowhold').css("opacity",100/(yPos*60+100));
         //console.log($(document).height()-yPos-430);
       if($(document).height()-yPos-440<=0){
-        alert("Boom");
+        /*alert("Boom");*/
       }
 }
 
