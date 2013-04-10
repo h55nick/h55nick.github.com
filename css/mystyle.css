@@ -9,7 +9,7 @@
 
 */
 div{
-/*  border: 1px dotted red;*/
+  /*border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
@@ -62,7 +62,8 @@ a:hover{
 .mainlink{
   margin-top: 5px;
   margin-bottom: 5px;
-  padding-left: -100px !important;
+  width: 100%;
+ /* padding-left: -100px !important;*/
   font-size: 1.4em;
 }.mainlink:hover{
   opacity: .7;
