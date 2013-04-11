@@ -69,9 +69,13 @@ a:hover{
 }.mainlink:hover{
   opacity: .7;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 .mainlink{
-  font-size: 1em;
+  font-size: 1.05em;
+}
+div.title.ptitle{
+  margin-left: -30px !important;
+  margin-right: 13px;
 }
 }
 .mslash{
