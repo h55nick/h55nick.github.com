@@ -6,10 +6,9 @@
 # White: FCFCFC;
 # Orange: D54E00;
 # D-Blue: 000222;
-
 */
 div{
-  /*border: 1px dotted red;*/
+/*  border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
@@ -56,8 +55,8 @@ a:hover{
 }
 #nameholder{
   margin-top: 10%;
-  font-size: 2.7em;
-  padding-left: 25px;
+  font-size: 2.8em;
+  /*padding-left: 25px;*/
 }
 .mainlink{
   margin-top: 5px;
@@ -66,13 +65,20 @@ a:hover{
   width: 100%;
  /* padding-left: -100px !important;*/
   font-size: 1.35em;
+
 }.mainlink:hover{
   opacity: .7;
+}
+@media only screen and (min-width: 768px) {
+.mainlink{
+  font-size: 1em;
+}
 }
 .mslash{
   color: #D54E00;
   font-size: 1.2em;
   font-weight: bold;
+/*  margin-left: -35px;*/
 }
 .micons{
    margin-top: 2%;
@@ -92,7 +98,7 @@ a:hover{
 }
 .head{
   height: 1px;
-  width: 40%;
+  width: 1px;
 }
 
 #barrow{
@@ -223,25 +229,16 @@ a:hover{
 }
 
 
-
-#contact{
-  color: #eee;
-  padding-top: 30px;
-  margin-top: 40px;
-  padding-bottom: 20px;
-  background: #111;
- /* height: 160px;*/
-}
 .clist{
   text-align: center;
   font-size: 1.5em;
 }
 
-footer#contact{
-  border-top: 1px dotted black;
-  background-image:url('../img/aboutBG.png');
+#contact{
+  color: #eee;
+  background: #111;
   width: 100%;
-/*  min-height: 300px;*/
-  padding-bottom: 20px;
+  margin-top: 60px;
+  padding: 60px 0px;
 }
 
