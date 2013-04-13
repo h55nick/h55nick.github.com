@@ -7,8 +7,8 @@
 # Orange: D54E00;
 # D-Blue: 000222;
 */
-div{
-/*  border: 1px dotted red;*/
+.project{
+  /*border: 1px dotted red;*/
 }
 body{
   background-color:  #FCFCFC;
@@ -164,7 +164,7 @@ div.title.ptitle{
   min-height: 600px;
 }
 #projects{
-    min-height: 800px;
+    /*min-height: 800px;*/
     background-color: #FCFCFC;/*#7C8480;*/
 }
 #slider{
@@ -199,7 +199,8 @@ div.title.ptitle{
   transform:rotate(45deg);
 }
 .container{
-  padding-top: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .project{
 /*  height:225px;
@@ -207,10 +208,13 @@ div.title.ptitle{
   background-color: #aaa;
   margin: 1px;
   margin-bottom: 30px;*/
-  text-align: center;
+  /*text-align: center;*/
 }
 .img{
   margin-bottom: 20px;
+}
+.moni{
+  margin-top: -40px !important;
 }
 
 

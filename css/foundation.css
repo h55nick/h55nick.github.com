@@ -2602,7 +2602,7 @@ form.custom {
   overflow: hidden;
   width: 100%;
   position: relative;
-  background: whitesmoke; }
+  }
   .orbit-container .orbit-slides-container {
     list-style: none;
     margin: 0;
@@ -2626,6 +2626,7 @@ form.custom {
         .orbit-container .orbit-slides-container > * .orbit-caption * {
           color: white; }
   .orbit-container .orbit-slide-number {
+    visibility: hidden;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -2639,13 +2640,14 @@ form.custom {
     height: 6px;
     width: 100px; }
     .orbit-container .orbit-timer .orbit-progress {
+      visibility: hidden;
       height: 100%;
       background-color: black;
       background-color: rgba(0, 0, 0, 0.6);
       display: block;
       width: 0%; }
     .orbit-container .orbit-timer > span {
-      display: none;
+     /* display: none;*/
       position: absolute;
       top: 10px;
       right: 0px;
@@ -2668,12 +2670,13 @@ form.custom {
     position: absolute;
     top: 50%;
     margin-top: -25px;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.6);
+    /*background-color: black;*/
+    /*background-color: rgba(0, 0, 0, 0.6);*/
     width: 50px;
     height: 60px;
     line-height: 50px;
-    color: white;
+    color: black;
+    border-radius: 20px;
     text-indent: -9999px !important; }
     .orbit-container .orbit-prev > span,
     .orbit-container .orbit-next > span {
@@ -2687,13 +2690,13 @@ form.custom {
   .orbit-container .orbit-prev {
     left: 0; }
     .orbit-container .orbit-prev > span {
-      border-color: transparent white transparent transparent; }
+      border-color: transparent black transparent transparent; }
     .orbit-container .orbit-prev:hover > span {
       border-color: transparent #cccccc transparent transparent; }
   .orbit-container .orbit-next {
     right: 0; }
     .orbit-container .orbit-next > span {
-      border-color: transparent transparent transparent white;
+      border-color: transparent transparent transparent black;
       left: 50%;
       margin-left: -8px; }
     .orbit-container .orbit-next:hover > span {
