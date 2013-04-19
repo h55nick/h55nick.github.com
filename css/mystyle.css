@@ -7,7 +7,7 @@
 # Orange: D54E00;
 # D-Blue: 000222;
 */
-.project{
+div{
   /*border: 1px dotted red;*/
 }
 body{
@@ -107,10 +107,11 @@ div.title.ptitle{
 
 #barrow{
   bottom: 50px;
-  left: 48%;
+  left: 47.5%;
   position: fixed;
-  margin: auto;
+  margin: auto 0;
 }
+
 #arrow{
   -ms-transform:rotate(90deg); /* IE 9 */
   -moz-transform:rotate(90deg); /* Firefox */
